@@ -26,12 +26,23 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        // Check if the attack cooldown has reached 0 or less. Then check if the Mouse Button 0 (left click) has been pressed
-        // and that the player is in a state where they can attack.
+        // Check if the attack cooldown has reached 0 or less. Then check the player, whether the relevant keybind 
+        // has been pressed, and that the player is in a state where they can attack.
         if(attackCooldown <= 0)
         {
-            // Input.GetMouseButtonDown(0)
-            if(Input.GetKey(KeyCode.Space) && playerMovement.canAttack())
+            if(Input.GetKey(KeyCode.Space) && playerMovement.canAttack() && gameObject.name == "Player")
+            {
+                // Triggers the melee animation
+                anim.SetTrigger("melee");
+                
+                // Lock player movement while attacking.
+                playerMovement.canMove = false;
+                
+                // Begin the attack cooldown.
+                attackCooldown = startAttackCooldown;
+            }
+
+            if(Input.GetMouseButtonDown(0) && playerMovement.canAttack() && gameObject.name == "Player2")
             {
                 // Triggers the melee animation
                 anim.SetTrigger("melee");
