@@ -27,10 +27,14 @@ public class PlayerMovement : MonoBehaviour
     private bool wallJumping; // Stores whether the player is currently wall jumping. 
     private float lastWall; // A float variable storing the last wall the character was on.
 
+    private PlayerHealth playerHealth;
+
     private void Awake(){
         body = GetComponent<Rigidbody2D>(); // Stores the RigidBody2D component from the game object.
         anim = GetComponent<Animator>(); // Stores the Animator component from the game object.
         boxCollider = GetComponent<BoxCollider2D>(); // Stores the BoxCollider2D component from the game object.
+
+        playerHealth = GetComponent<PlayerHealth>(); // Stores the PlayerHealth script componenets.
 
         lastIdleTime = Time.time;
         canMove = true;
@@ -41,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // Check inputs for player 1
-        if(gameObject.name == "Player")
+        if(gameObject.name == "Player" && playerHealth.isAlive())
         {
             // Store the player 1 input along the horizontal axis (A & D) into horizontalInput. Values range from -1 to 1.
             horizontalInput = Input.GetAxis("Horizontal");
@@ -51,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Check inputs for player 2
-        if(gameObject.name == "Player2")
+        if(gameObject.name == "Player2" && playerHealth.isAlive())
         {
             // Store the player 2 input along the horizontal axis (LeftArrow & RightArrow) into horizontalInput. Values range from -1 to 1.
             horizontalInput = Input.GetAxis("Horizontal2");
@@ -248,7 +252,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canJump()
     {
-        return isGrounded() && lastGroundTime - lastAirTime > 0.1f; 
+        return isGrounded() && lastGroundTime - lastAirTime > 0.1f && playerHealth.isAlive(); 
     }
 
     // Here we use the Physics2D Raycast method to cast 3 rays downwards to check if the player is grounded.
@@ -324,6 +328,6 @@ public class PlayerMovement : MonoBehaviour
     // Checks whether the player can attack by ensuring the postion is on the ground and not on a wall.
     public bool canAttack()
     {
-        return isGrounded() && !onWall();
+        return isGrounded() && !onWall() && playerHealth.isAlive();
     }
 }

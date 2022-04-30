@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int maxLives, currLives; // Variables to store the maximum and current player health.
+
+    public Image[] playerHearts; // An image array to store player 1 hearts remaining
+    public Image[] player2Hearts; // An image array to store player 2 hearts remaining
 
     private PlayerMovement playerMovement; // Variable that allows access to the PlayerMovement script functions.
 
@@ -18,13 +22,17 @@ public class PlayerHealth : MonoBehaviour
         respawnPos = transform.position; // Store the starting position of the player as the respawn postion.
         
         currLives = maxLives; // Set the current player lives to the maximum player lives.
+
+        heartInit();
     }
 
     void Update()
     {
-        if(currLives <= 0)
+        // If the player is not alive, trigger the death animation and freeze player movement.
+        if(!isAlive())
         {
-            removePlayer();
+            anim.SetTrigger("death");
+            playerMovement.canMove = false;
         }
     }
 
@@ -40,12 +48,36 @@ public class PlayerHealth : MonoBehaviour
     public void takeDamage(int damage)
     {
         anim.SetTrigger("hit");
+        
         stopMove();
+
         currLives -= damage;
+
+        if(currLives > 0 && gameObject.name == "Player")
+        {
+            playerHearts[currLives-1].enabled = false;
+        }
+
+        if(currLives > 0 && gameObject.name == "Player2")
+        {
+            player2Hearts[currLives-1].enabled = false;
+        }
+        
         Invoke(nameof(startMove), 0.2f);
     }
 
-    // Removes the game object from the scene using Destroy()
+    private void heartInit()
+    {
+        if(GameObject.Find("Player2") == null)
+        {
+            for (int i = 0; i < player2Hearts.Length; i++)
+            {
+                player2Hearts[i].enabled = false;
+            }
+        }
+    }
+
+    // Sets the game object to inactive in the scene using SetActive(false)
     private void removePlayer()
     {
         gameObject.SetActive(false);
