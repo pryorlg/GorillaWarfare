@@ -205,6 +205,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &436948701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436948702}
+  m_Layer: 8
+  m_Name: MeleePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436948702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436948701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.43, y: -0.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1015045470}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8311388568461194916, guid: 0a12b7ffa9fd1f449bf2597898840589, type: 3}
@@ -577,8 +607,8 @@ GameObject:
   - component: {fileID: 1015045467}
   - component: {fileID: 1015045466}
   - component: {fileID: 1015045471}
-  - component: {fileID: 1015045472}
   - component: {fileID: 1015045473}
+  - component: {fileID: 1015045472}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -599,6 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 1
+  currLives: 0
 --- !u!50 &1015045467
 Rigidbody2D:
   serializedVersion: 4
@@ -705,9 +736,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015045465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.552, y: -2.556, z: 0}
+  m_LocalPosition: {x: 3.011, y: -0.609, z: 0}
   m_LocalScale: {x: -0.8, y: 0.8, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 436948702}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -723,7 +755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb69aea421e7f34e995a1368038def0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDist: 2
+  isMoving: 0
+  moveDist: 1
   moveSpeed: 50
 --- !u!95 &1015045472
 Animator:
@@ -756,9 +789,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61795935a9b69314aa789acb911bd50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startAttackCooldown: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 1
+  meleePoint: {fileID: 436948702}
+  attackRange: 0.3
+  damage: 1
 --- !u!1 &1067920306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,5 +2115,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8345614793429480023, guid: 6fa9cadbd12794045815c8c877a14b59, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8326564158222075630, guid: a00b575cdfc1c7347861add359e0b22e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa9cadbd12794045815c8c877a14b59, type: 3}

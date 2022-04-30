@@ -4,7 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {    
     [SerializeField] private int maxLives; // Variable to store the maximum enemy health.
     private Animator anim; // Varaible to store the Animator component information.
-    private int currLives; // Variable to store the current enemy health.
+    [SerializeField] private int currLives; // Variable to store the current enemy health.
 
     void Start()
     {

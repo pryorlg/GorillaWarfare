@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    private bool isMoving; // Boolean variable to store whether the enemy is currently moving.
+    public bool isMoving; // Boolean variable to store whether the enemy is currently moving.
 
     [SerializeField] private float moveDist; // Variable to store the distance the enemy moves.
 
