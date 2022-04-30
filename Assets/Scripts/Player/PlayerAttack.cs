@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim; // Varaible to store the Animator component information.
 
     private PlayerMovement playerMovement; // Variable that allows access to the PlayerMovement script functions.
+    private PlayerHealth playerHealth; // Variable that allows access to the PlayerHealth script functions. 
 
     public Transform meleePoint; // Variable to store the child transform of the player tracking the melee point.
 
@@ -22,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim = GetComponent<Animator>(); // Stores the Animator component from the game object.
         playerMovement = GetComponent<PlayerMovement>(); // Stores the PlayerMovement components from the PlayerMovement script
+        playerHealth = GetComponent<PlayerHealth>(); // Stores the PlayerHealth componenets from the PlayerHealth script
     }
 
     private void Update()
@@ -81,7 +83,6 @@ public class PlayerAttack : MonoBehaviour
         // of the EnemyHealth script component and pass an integer to track the amount of damage given.
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit " + enemy.name);
             enemy.GetComponent<EnemyHealth>().takeDamage(damage);
         }
     }
