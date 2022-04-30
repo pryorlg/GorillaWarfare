@@ -91,7 +91,6 @@ public class EnemyAttack : MonoBehaviour
         // of the PlayerHealth script component and pass an integer to track the amount of damage given.
         foreach(Collider2D player in hitPlayers)
         {
-            Debug.Log("We hit " + player.name);
             player.GetComponent<PlayerHealth>().takeDamage(damage);
         }
     }
