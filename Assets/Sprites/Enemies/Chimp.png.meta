@@ -41,6 +41,27 @@ TextureImporter:
   - first:
       213: -6260255385484259502
     second: Chimp_12
+  - first:
+      213: 6187542372873369442
+    second: Chimp_13
+  - first:
+      213: 1411720940209877001
+    second: Chimp_14
+  - first:
+      213: -254340625510417767
+    second: Chimp_15
+  - first:
+      213: 6119237675567153984
+    second: Chimp_16
+  - first:
+      213: 5922134697144876458
+    second: Chimp_17
+  - first:
+      213: 7101144581412790689
+    second: Chimp_18
+  - first:
+      213: 7211179400571805732
+    second: Chimp_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,11 +191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 148.66666
-        width: 100
-        height: 74.333336
+        y: 192
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,12 +211,12 @@ TextureImporter:
       name: Chimp_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 148.66666
-        width: 100
-        height: 74.333336
+        x: 99
+        y: 192
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +232,12 @@ TextureImporter:
       name: Chimp_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 148.66666
-        width: 100
-        height: 74.333336
+        x: 198
+        y: 192
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +253,12 @@ TextureImporter:
       name: Chimp_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 148.66666
-        width: 100
-        height: 74.333336
+        x: 297
+        y: 192
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,11 +275,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 74.666664
-        width: 100
-        height: 74.333336
+        y: 128
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +295,12 @@ TextureImporter:
       name: Chimp_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 74.666664
-        width: 100
-        height: 74.333336
+        x: 99
+        y: 128
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +316,12 @@ TextureImporter:
       name: Chimp_6
       rect:
         serializedVersion: 2
-        x: 200
-        y: 74.666664
-        width: 100
-        height: 74.333336
+        x: 198
+        y: 128
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +337,12 @@ TextureImporter:
       name: Chimp_7
       rect:
         serializedVersion: 2
-        x: 300
-        y: 74.666664
-        width: 100
-        height: 74.333336
+        x: 297
+        y: 128
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,11 +359,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.6666641
-        width: 100
-        height: 74.333336
+        y: 64
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +379,12 @@ TextureImporter:
       name: Chimp_9
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0.6666641
-        width: 100
-        height: 74.333336
+        x: 99
+        y: 64
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +400,12 @@ TextureImporter:
       name: Chimp_10
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0.6666641
-        width: 100
-        height: 74.333336
+        x: 198
+        y: 64
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +421,12 @@ TextureImporter:
       name: Chimp_11
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0.6666641
-        width: 100
-        height: 74.333336
+        x: 297
+        y: 64
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +442,12 @@ TextureImporter:
       name: Chimp_12
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0.6666641
-        width: 100
-        height: 74.333336
+        x: 396
+        y: 64
+        width: 99.42857
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.22}
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,6 +455,153 @@ TextureImporter:
       bones: []
       spriteID: 25f0cf825ea1f19a0800000000000000
       internalID: -6260255385484259502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2677bcf41019ed550800000000000000
+      internalID: 6187542372873369442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900b03b27b0779310800000000000000
+      internalID: 1411720940209877001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_15
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a30847c86687cf0800000000000000
+      internalID: -254340625510417767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0430e5cae36ebe450800000000000000
+      internalID: 6119237675567153984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadf5575126af2250800000000000000
+      internalID: 5922134697144876458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1acc19f555c8260800000000000000
+      internalID: 7101144581412790689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimp_19
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 99.42857
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42062b65571431460800000000000000
+      internalID: 7211179400571805732
       vertices: []
       indices: 
       edges: []
