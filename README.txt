@@ -1,6 +1,16 @@
 Gorilla Warfare
 By: Cody Kallenbach, Reese Farrell, Pryor Gibson
 
+NOTE: All sprites and prefabs containing paid assets from third party websites have been removed for licensing reasons. These sprites are available for purchase from these locations:
+
+Map sprites and tiles
+https://szadiart.itch.io/sidescroll-worlds-set3
+https://szadiart.itch.io/platformer-fantasy-complete
+
+Player sprites (edits made)
+https://elthen.itch.io/2d-pixel-art-giant-gorilla-sprites
+
+
 Source code:
 All files are included within this zip, but coding was done via the script files. These are all accessable under \Assets\Scripts. The language used is C#.
 
