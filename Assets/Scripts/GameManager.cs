@@ -52,8 +52,7 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false) {
             gameHasEnded = true;
 
-            // Set the victory screen to be active
-            victoryUI.SetActive(true);
+            SceneManager.LoadScene(3);
         }
     }
 }

@@ -11,5 +11,9 @@ public class GameOver : MonoBehaviour // public function for pressing play butto
           SceneManager.LoadScene(1); // load level 1
      }
 
+     public void QuitGame()
+     {
+          SceneManager.LoadScene(0); // load the main menu
+     }
 
 }
