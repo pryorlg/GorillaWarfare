@@ -11,3 +11,20 @@ Unzip this repository into a location of your choice and install UnityHub(https:
 After adding the project to UnityHub, ensure that you have the Unity Editor version 2020.3.33f1 installed and open the project. Once the Unity Editor is opened, navigate to File>Build Settings... and select 'Build' at the bottom of the popup. Select a location to build the project. 
 
 Last, navigate to the location where the project was built, and select 'GorillaWarfare.exe' to run the executable.
+
+Once you are in the game and select the play button, the controls are as follows: 
+
+Player 1 (Purple Gorilla)
+- Jump (W)
+- Move Left (A)
+- Move Right (D)
+- Attack (Spacebar)
+
+Player 2 (Yellow Gorilla)
+- Jump (Up Arrow)
+- Move Left (Left Arrow)
+- Move Right (Right Arrow)
+- Attack (Left Mouse Button)
+
+General Controls:
+- Open pause menu (Escape)
