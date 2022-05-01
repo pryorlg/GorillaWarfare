@@ -11,14 +11,5 @@ public class GameOver : MonoBehaviour // public function for pressing play butto
           SceneManager.LoadScene(1); // load level 1
      }
 
-public class Quit : MonoBehaviour
-{
 
-     public void PlayGame()
-     {
-          SceneManager.LoadScene(0); // load main menu
-     }
-
-
- }
 }
