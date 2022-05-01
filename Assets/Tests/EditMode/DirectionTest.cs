@@ -6,20 +6,16 @@ using UnityEngine.TestTools;
 
 public class Direction
 {
-    // A Test behaves as an ordinary method
     [Test]
-    public void DirectionSimplePasses()
+    public void Right()
     {
-        // Use the Assert class to test conditions
+        
+        Assert.AreEqual(new Vector2(1, 0), Vector2.right);
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator DirectionWithEnumeratorPasses()
+    [Test]
+    public void Left()
     {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
+        Assert.AreEqual(new Vector2(-1, 0), Vector2.left);
     }
 }
