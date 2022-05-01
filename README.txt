@@ -1,7 +1,7 @@
 Gorilla Warfare
 By: Cody Kallenbach, Reese Farrell, Pryor Gibson
 
-NOTE: All sprites and prefabs containing paid assets from third party websites have been removed for licensing reasons. These sprites are available for purchase from these locations:
+NOTE: All sprites and prefabs containing paid assets from third party websites have been removed from the public repository for licensing reasons. These sprites are available for purchase from these locations:
 
 Map sprites and tiles
 https://szadiart.itch.io/sidescroll-worlds-set3
