@@ -16,11 +16,12 @@ public class EnemyHealth : MonoBehaviour
     void Update()
     {
         // If the enemy object's current lives is less than or equal to 0
-        // trigger the death animation and call the removeEnemy function
-        // after 1 second.
+        // trigger the death animation, begin ignoring collisions with the player
+        // and call the removeEnemy function after 1 second.
         if(currLives <= 0)
         {
             anim.SetTrigger("death");
+            Physics2D.IgnoreLayerCollision(0, 8, true);
             Invoke(nameof(removeEnemy), 1f);
         }
     }
