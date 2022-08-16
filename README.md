@@ -41,4 +41,4 @@ General Controls:
 
 Below is a video showcasing basic functionality that was accomplished in the project as well as sprites used which are not included in the repo.
 
-<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/rljcz6" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+https://streamable.com/rljcz6
